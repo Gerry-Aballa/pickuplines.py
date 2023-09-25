@@ -1,15 +1,17 @@
-from app import pickupline, twitter, facebook
+from app.pickupline import get_pickupline
+from app.twitter import sendTweet
+from app.facebook import sendPost
 import schedule
 import time
 
 
 def sendPosts():
-    pickupline.get_pickupline
-    twitter.sendTweet
-    facebook.sendPost
+    get_pickupline()
+    sendTweet()
+    sendPost()
     
-
-schedule.ever().day.at("09:00").do(sendPosts)
+sendPosts()
+schedule.ever().day.at("12:00").do(sendPosts)
 
 
 while True:
