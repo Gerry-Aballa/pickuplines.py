@@ -15,7 +15,7 @@ api = tweepy.API(auth)
 
 def sendTweet():
 
-    client.create_tweet(text=pickupline_str)
+    client.create_tweet(text=f"{pickupline_str}\n#Trending #pickuplines")
 
     print("Tweet posted successfully")
 
