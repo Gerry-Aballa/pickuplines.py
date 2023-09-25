@@ -1,5 +1,5 @@
 import tweepy
-from app.pickupline import pickupline_str
+from app.pickupline import pickupline_line
 import os
 
 bearer_token = os.environ.get("X_BEARER_TOKEN")
@@ -16,7 +16,7 @@ api = tweepy.API(auth)
 
 def sendTweet():
 
-    client.create_tweet(text=f"{pickupline_str}\n#Trending #pickuplines")
+    client.create_tweet(text=f"{pickupline_line}\n#Trending #pickuplines")
 
     print("Tweet posted successfully")
 

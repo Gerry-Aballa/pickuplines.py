@@ -1,5 +1,5 @@
 import requests
-from app.pickupline import pickupline_str
+from app.pickupline import pickupline_line
 import os
 
 page_id = os.environ.get("FB_PAGE_ID")
@@ -10,7 +10,7 @@ post_url = f'https://graph.facebook.com/v18.0/{page_id}/feed'
 
 
 post_data = {
-    'message': pickupline_str,
+    'message': pickupline_line,
     'access_token': page_access_token
 }
 
