@@ -1,5 +1,5 @@
 from app.pickupline import get_pickupline
-# from app.twitter import sendTweet
+from app.twitter import sendTweet
 from app.facebook import sendPost
 import schedule
 import time
@@ -7,11 +7,11 @@ import time
 
 def sendPosts():
     get_pickupline()
-    # sendTweet()
+    sendTweet()
     sendPost()
     
 sendPosts()
-# schedule.ever().day.at("12:00").do(sendPosts)
+# schedule.ever().day.at("09:00").do(sendPosts)
 
 
 # while True:

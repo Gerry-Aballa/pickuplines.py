@@ -18,5 +18,5 @@ def sendPost():
 
     response = requests.post(post_url, data=post_data)
 
-    print("FB posted successfully!")
+    print("Posted to Facebook successfully!")
     

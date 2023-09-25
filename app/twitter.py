@@ -18,5 +18,5 @@ def sendTweet():
 
     client.create_tweet(text=f"{pickupline_line}\n#Trending #pickuplines")
 
-    print("Tweet posted successfully")
+    print("Tweet posted successfully!")
 
